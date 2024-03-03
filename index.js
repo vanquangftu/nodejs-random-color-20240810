@@ -16,6 +16,15 @@ app.get('/learning', (req, res) => {
     res.redirect('/learning.html');
 });
 
+// Add a GET method for /service-a path
+app.get('/service-a', (req, res) => {
+    res.redirect('/index.html');
+});
+// Add a GET method for /service-b path
+app.get('/service-b', (req, res) => {
+    res.redirect('/index.html');
+});
+
 // Generate a random color
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
